@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  
+    <div class="container">
+<h1 class="title-page-item"> Learn to code by watching others </h1>
+
+<p class="desc-page-item"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+but understanding how developers think is invaluable.</p>
+</div> 
+  
+  <div class="container-form">
+<button  class="button-shap-item" id="button-blue"><strong class="p-item-white" >Try it free 7 days </strong> then $20/mo. thereafter</button>
+
+<form autocomplete="off" novalidate id="loginform" name="loginform" ; >
+
+<input size="20" id="inputfirst" name="firstname" type="text" placeholder="First Name" class="button-shap" required>
+<span id="firstname_Error"></span>
+
+<input  id="inputsecond" name="lastname" type="text" placeholder="Last Name" class="button-shap" required >
+<span id="lastname_Error"></span>
+
+<input id="inputemail"  name="email" type="email" placeholder="Email Address" class="button-shap " required >
+<span id="email_Error"></span>
+
+<input  id="inputpassword" name="password" type="password" placeholder="Password" class="button-shap" required >
+<span id="password_Error"></span>
+
+<button  type="submit" class="button-shap" id="button-green">Claim your free trial </button>
+<p class="p-item"> By clicking the button, you are agreeing to our <strong class="p-item-red">Terms and Services</strong></p>
+</form>
+</div>
+</main>
+  <footer>
+     <!-- I HOPE YOU SLEEP ALONE FOR LIFE  -->
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Richard Ray</a>.
+    </p>
+  </footer>
+</body>
+<script src="./javascript.js" defer>
+</script>
+</html>

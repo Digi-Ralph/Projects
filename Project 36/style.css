@@ -1,0 +1,571 @@
+@media only screen and (min-width: 1366px) {
+  html {
+    zoom: 1;
+  }
+
+  * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  #list,
+  .main-title,
+  .item-title,
+  .button-item {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+  }
+  body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+  /* Navigation ------- Navigation */
+  .nav-header {
+    width: 100%;
+    height: 30vh;
+    z-index: 10;
+  }
+  .nav-bar {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3em 3em 0 3em;
+  }
+
+  .mobile-hamburger,
+  .close,
+  .toggleNav,
+  .toggleHamburger {
+    display: none;
+  }
+
+  #login {
+    margin-left: 150px;
+  }
+  #login > a:hover {
+    color: hsl(230, 11%, 40%);
+  }
+
+  .logo-item {
+    display: inline;
+  }
+  .list-nav {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    list-style: none;
+    font: bolder;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .list-nav-behind {
+    position: absolute;
+    top: -10%;
+    left: 53%;
+    width: 150vh;
+    height: 70vh;
+    background: hsl(207, 33%, 95%);
+    z-index: -5;
+    border-radius: 70px;
+    box-sizing: border-box;
+  }
+
+  .list-nav > li > a {
+    margin: 0 1.5em 0 1.5em;
+    display: inline;
+    text-decoration: none;
+    color: hsl(230, 29%, 20%);
+    z-index: 1;
+    font-size: 0.8em;
+  }
+  #list:hover {
+    border-bottom: 1px solid hsl(230, 29%, 20%);
+  }
+  /* Navigation ------- Navigation */
+
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container-toAction {
+    width: 35vw;
+    height: 60vh;
+    margin: 5em 0 0 3em;
+  }
+
+  .container-img {
+    position: relative;
+    left: 14%;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  #item-title {
+    background: hsl(230, 29%, 20%);
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    font: 400;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+    letter-spacing: none;
+  }
+
+  .title > p {
+    color: hsl(230, 11%, 40%);
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+
+  .main-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 40ch;
+    color: hsl(230, 29%, 20%);
+  }
+
+  .sub-main {
+    margin-bottom: 50px;
+    width: 28ch;
+    color: hsl(230, 11%, 40%);
+  }
+  .button-action > p {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: hsl(230, 11%, 40%);
+  }
+  .button-item:hover {
+    background: hsl(0, 89%, 81%);
+  }
+
+  .button-item {
+    color: white;
+    border-radius: 4px;
+    background: hsl(0, 100%, 68%);
+    padding: 15px 30px;
+    margin-right: 15px;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+  html {
+    zoom: 0.9;
+  }
+
+  * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  #list,
+  .main-title,
+  .item-title,
+  .button-item {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+  }
+  body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "nav-header"
+      "main-container"
+      "main-container"
+      "footer";
+  }
+  .nav-header {
+    grid-area: nav-header;
+  }
+  .container-img {
+    grid-area: container-img;
+  }
+  .container-toAction {
+    grid-area: container-toAction;
+  }
+  .footer {
+    grid-area: footer;
+  }
+
+  /* Navigation ------- Navigation */
+
+  .nav-header {
+    width: 100%;
+    height: 35vh;
+    z-index: 10;
+  }
+  .nav-bar {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3em 3em 0 3em;
+  }
+  #login > a:hover {
+    color: hsl(230, 11%, 40%);
+  }
+
+  .logo-item {
+    display: inline;
+  }
+  .list-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background: white;
+    box-shadow: 0.1em 0.1em 0.5em black;
+    text-transform: uppercase;
+    list-style: none;
+    font: bolder;
+    height: 30vh;
+    padding: 1em 0 1em 0;
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    z-index: 1;
+  }
+
+  hr {
+    background-color: hsl(207, 33%, 95%);
+    height: 0.2vh;
+    margin: 0 1em 0 1em;
+  }
+
+  .list-nav-behind {
+    position: absolute;
+    top: -10%;
+    left: 47%;
+    width: 150vh;
+    height: 70vh;
+    background: hsl(207, 33%, 95%);
+    z-index: -5;
+    border-radius: 70px;
+    box-sizing: border-box;
+  }
+
+  .list-nav > li > a {
+    text-decoration: none;
+    color: hsl(230, 29%, 20%);
+    z-index: 1;
+    font-size: 0.8em;
+  }
+  #list > a {
+    margin: 1em 0 0 0;
+  }
+
+  .mobile-hamburger {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    right: 10%;
+    height: 3.8vh;
+    cursor: pointer;
+  }
+
+  .toggleNav {
+    display: none;
+    transition: all 5s ease;
+  }
+  .toggleHamburger {
+    display: none;
+    transition: all 5s ease;
+  }
+  /* Navigation ------- Navigation */
+
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    /* grid-row-start: 3; */
+  }
+
+  .container-toAction {
+    /* border: 1px solid red; */
+    /* width: 75vw; */
+    /* height: 60vh; */
+    margin: 5em 2.8em 0 2.8em;
+    border: red 1px solid;
+    width: 80%;
+    height: 100%;
+  }
+
+  .container-img {
+    flex-shrink: 0;
+    position: relative;
+    left: 35%;
+  }
+  .container-img > img {
+    width: 80%;
+    height: 100%;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+
+  #item-title {
+    background: hsl(230, 29%, 20%);
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    font: 400;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+    letter-spacing: none;
+    font-size: 0.9em;
+  }
+
+  .title > p {
+    color: hsl(230, 11%, 40%);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+  }
+
+  .main-title {
+    /* border: 1px solid red; */
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 50ch;
+    color: hsl(230, 29%, 20%);
+  }
+
+  .sub-main {
+    margin-bottom: 30px;
+    width: 30ch;
+    color: hsl(230, 11%, 40%);
+  }
+  .button-action > p {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: hsl(230, 11%, 40%);
+    font-size: 0.8em;
+  }
+  .button-item:hover {
+    background: hsl(0, 89%, 81%);
+  }
+
+  .button-item {
+    color: white;
+    border-radius: 4px;
+    background: hsl(0, 100%, 68%);
+    padding: 15px 30px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+  footer {
+    grid-row-start: 4;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    zoom: 0.8;
+  }
+
+  * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  #list,
+  .main-title,
+  .item-title,
+  .button-item {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+  }
+  body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+  /* Navigation ------- Navigation */
+
+  .nav-header {
+    width: 100%;
+    height: 20vh;
+    z-index: 10;
+  }
+  .nav-bar {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3em 3em 0 3em;
+  }
+  #login > a:hover {
+    color: hsl(230, 11%, 40%);
+  }
+
+  .logo-item {
+    display: inline;
+  }
+  .list-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background: white;
+    box-shadow: 0.1em 0.1em 0.5em black;
+    text-transform: uppercase;
+    list-style: none;
+    font: bolder;
+    height: 30vh;
+    padding: 1em 0 1em 0;
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    z-index: 1;
+  }
+
+  hr {
+    background-color: hsl(207, 33%, 95%);
+    height: 0.2vh;
+    margin: 0 1em 0 1em;
+  }
+
+  .list-nav-behind {
+    position: absolute;
+    top: -10%;
+    left: 47%;
+    width: 150vh;
+    height: 70vh;
+    background: hsl(207, 33%, 95%);
+    z-index: -5;
+    border-radius: 70px;
+    box-sizing: border-box;
+  }
+
+  .list-nav > li > a {
+    text-decoration: none;
+    color: hsl(230, 29%, 20%);
+    z-index: 1;
+    font-size: 0.8em;
+  }
+  #list > a {
+    margin: 1em 0 0 0;
+  }
+
+  .mobile-hamburger {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    right: 10%;
+    height: 3.8vh;
+    cursor: pointer;
+  }
+
+  .toggleNav {
+    display: none;
+    transition: all 5s ease;
+  }
+  .toggleHamburger {
+    display: none;
+    transition: all 5s ease;
+  }
+  /* Navigation ------- Navigation */
+
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container-toAction {
+    width: 75vw;
+    height: 60vh;
+    margin: 5em 2.8em 0 2.8em;
+  }
+
+  .container-img {
+    flex-shrink: 0;
+    position: relative;
+    left: 10%;
+  }
+  .container-img > img {
+    width: 100%;
+    height: 100%;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+
+  #item-title {
+    background: hsl(230, 29%, 20%);
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    font: 400;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+    letter-spacing: none;
+    font-size: 0.7em;
+  }
+
+  .title > p {
+    color: hsl(230, 11%, 40%);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+  }
+
+  .main-title {
+    /* border: 1px solid red; */
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 40ch;
+    color: hsl(230, 29%, 20%);
+  }
+
+  .sub-main {
+    margin-bottom: 20px;
+    width: 28ch;
+    color: hsl(230, 11%, 40%);
+  }
+  .button-action > p {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: hsl(230, 11%, 40%);
+    font-size: 0.5em;
+  }
+  .button-item:hover {
+    background: hsl(0, 89%, 81%);
+  }
+
+  .button-item {
+    color: white;
+    border-radius: 4px;
+    background: hsl(0, 100%, 68%);
+    padding: 10px 15px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+}

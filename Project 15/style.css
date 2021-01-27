@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #2f3035;
+}
+
+.center {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  height: 118px;
+}
+
+nav {
+  background: rgba(8, 0, 0, 0.329);
+  height: 40px;
+}
+
+main {
+  height: 400px;
+}
+
+footer {
+  background: rgba(8, 0, 0, 0.329);
+  height: 50px;
+}

@@ -1,0 +1,53 @@
+html {
+  /* background-image: url(./images/image-lion-background.png); */
+  background: linear-gradient(#fc5e55, #fa4083);
+  /* background: #fc5e55; */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+body {
+  background-image: url(./images/image-lion-background.png);
+
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.container {
+  width: 1024px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+main {
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainbox1 {
+  flex: 2;
+}
+.mainbox2 {
+  flex: 1;
+}
+
+.cards {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.card1 {
+  width: 30%;
+  min-height: 250px;
+}
+.card2 {
+  width: 30%;
+  min-height: 250px;
+}
+.card3 {
+  width: 30%;
+  min-height: 250px;
+}

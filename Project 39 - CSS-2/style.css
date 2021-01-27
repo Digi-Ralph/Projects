@@ -1,0 +1,102 @@
+/* INSTRUCTIONS
+ *
+ * 1) Keep the text inside .intro-content
+ *    in the same place, but have the background
+ *    extend from one side of the viewport
+ *    to the other, no matter how wide or narrow
+ *    the browser is.
+ *
+ * 2) Limit the maximum width of the text in the
+ *    bottom area.
+ *
+ * You may modify the HTML if needed
+ * (you probably should for this challenge)
+ *
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  /* display: flex; */
+  /* flex-direction: row; */
+  background: #23424a;
+  color: white;
+  padding: 100px 0;
+}
+.wrapper {
+  width: 80%;
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  /* align-items: flex-start; */
+  /* flex-direction: row; */
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1rem;
+  margin: 1em 0em 2em 0em;
+}
+
+a {
+  border-radius: 20px 20px 20px 20px;
+  padding: 0.8em 1.5em 0.8em 1.5em;
+  border: none;
+  background-color: #38cfd9;
+  font-weight: bold;
+  color: #23424a;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.hero {
+  width: 60%;
+}
+
+.col-container {
+  width: 80%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  padding: 10px 10px;
+  gap: 1em;
+  flex-flow: row;
+}
+
+.color-col {
+  background-color: rgb(203, 243, 224);
+}
+
+.hero-img {
+  background-image: url(./hero.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  /* height: 100%; */
+  margin-left: 1em;
+  /* height: 100%; */
+  /* background-color: red; */
+  /* border: 1px solid red; */
+  /* border-radius: 100% 150%; */
+  border-radius: 48% 52% 69% 31% / 68% 42% 58% 32%  ;
+}

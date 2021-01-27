@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(120deg, rgb(243, 203, 95), rgb(243, 165, 20));
+}
+
+header,
+form {
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  color: white;
+  text-shadow: 5% 5% 5% black;
+  font-size: 3rem;
+}
+
+.todo-input {
+  height: 50px;
+  width: 500px;
+  border: none;
+}
+.todo-button {
+  margin: -70px;
+  padding: 15px 10px;
+  background: white;
+  border: none;
+}
+
+.todo-button:hover {
+  background: rgb(243, 165, 20);
+  transition: 1s all linear;
+}
+
+.todo-list {
+  /* border: red solid 2px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+
+  border: none;
+  /* line-height: 50px; */
+}
+
+.todo {
+  border-radius: 4px;
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  min-width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease-in;
+}
+
+.complete,
+.TRASH {
+  padding: 15px 10px;
+  background: white;
+  border: none;
+  margin: 1px;
+  font-weight: 500;
+  /* font-size: 1rem; */
+}
+.complete {
+  background: green;
+}
+.TRASH {
+  background: red;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: rotateZ(20deg) translateY(8deg);
+  transition: all 0.5s ease-in;
+  opacity: 0;
+}
+
+.filter-todo {
+  padding: 17px 1px;
+  margin: 0px 0px 0px 5rem;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+.filter-todo:hover {
+  content: "\25BC";
+  color: black;
+  /* position: absolute; */
+}
